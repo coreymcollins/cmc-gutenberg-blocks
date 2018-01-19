@@ -18,7 +18,7 @@ final class CMC_Gutenberg_Blocks {
 	/**
 	 * Singleton instance of plugin.
 	 *
-	 * @var    WDS_Camera_On_Campus
+	 * @var    CMC_Gutenberg_Blocks
 	 * @since  1.0.0
 	 */
 	protected static $single_instance = null;
@@ -27,7 +27,7 @@ final class CMC_Gutenberg_Blocks {
 	 * Creates or returns an instance of this class.
 	 *
 	 * @since   1.0.0
-	 * @return  WDS_Camera_On_Campus A single instance of this class.
+	 * @return  CMC_Gutenberg_Blocks A single instance of this class.
 	 */
 	public static function get_instance() {
 		if ( null === self::$single_instance ) {
