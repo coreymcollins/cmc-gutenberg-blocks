@@ -5,9 +5,10 @@ const { __ } = wp.i18n;
 const {
 	registerBlockType,
 	Editable,
-	MediaUploadButton,
+	MediaUpload,
 } = wp.blocks;
 const {
+	Dashicon,
 	Button,
 } = wp.components;
 
@@ -76,18 +77,19 @@ export default registerBlockType(
 				<div className={ props.className }>
 					<h2>{ __( 'CMC Editable Content Block with Media' ) }</h2>
 					{ ! props.attributes.imgID ? (
-						<MediaUploadButton
+						<MediaUpload
 							buttonProps={ {
 								className: 'components-button button button-large'
 							} }
 							onSelect={ onSelectImage }
 							type="image"
 							value={ props.attributes.imgID }
-						>
-						<Button>
-							{ __( 'Upload Image' ) }
-						</Button>
-						</MediaUploadButton>
+							render={ ( { open } ) => (
+							<Button className="button button-large" onClick={ open }>
+								<Dashicon icon="format-image" /> { ! props.attributes.imgID ? __( 'Upload Image' ) : <img src={ props.attributes.imgURL } /> }
+							</Button>
+						) }
+						/>
 					) : (
 						<p class="image-wrapper">
 							<img
@@ -96,10 +98,10 @@ export default registerBlockType(
 							/>
 							{ props.focus ? (
 								<Button
-									className="remove-image"
+									className="remove-image button button-large"
 									onClick={ onRemoveImage }
 								>
-									{ __( 'Remove Image') }
+									<Dashicon icon="no-alt" /> { __( 'Remove Image') }
 								</Button>
 							) : null }
 						</p>
