@@ -32,7 +32,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-fifty-fifty-with-options',
 	{
-		title: __( 'CMC - Editable Title and Content - Fifty Fifty With Options' ),
+		title: __( 'CMC - Editable Content Fifty Fifty Block with Option' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -130,7 +130,7 @@ export default registerBlockType(
 					</BlockControls>
 				),
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block - Fifty Fifty With Options' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Fifty Fifty Block with Option' ) }</h2>
 
 					<h2>{ __( 'Left Block' ) }</h2>
 					<Editable
@@ -162,7 +162,7 @@ export default registerBlockType(
 						{ 'some-option': props.attributes.someOption },
 					) }
 				>
-					<h2>{ __( 'CMC Editable Content Block - Fifty Fifty With Options' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Fifty Fifty Block with Option' ) }</h2>
 					<div class="content-block-content content-block-left">
 						{ props.attributes.messageLeft }
 					</div>

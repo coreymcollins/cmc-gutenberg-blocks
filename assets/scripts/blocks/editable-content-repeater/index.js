@@ -30,7 +30,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-repeater',
 	{
-		title: __( 'CMC - Editable Title and Content - Repeater' ),
+		title: __( 'CMC - Experimental Editable Content Block Repeater (non-working)' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -58,7 +58,7 @@ export default registerBlockType(
 
 			return (
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block - Repeater' ) }</h2>
+					<h2>{ __( 'CMC - Experimental Editable Content Block Repeater (non-working)' ) }</h2>
 
 					<h2>{ __( 'Maybe A Repeater?' ) }</h2>
 					<Editable
@@ -94,7 +94,7 @@ export default registerBlockType(
 		save: props => {
 			return (
 				<div>
-					<h2>{ __( 'CMC Editable Content Block - Repeater' ) }</h2>
+					<h2>{ __( 'CMC - Experimental Editable Content Block Repeater (non-working)' ) }</h2>
 					<div class="content-block-content">
 						{ props.attributes.message }
 					</div>

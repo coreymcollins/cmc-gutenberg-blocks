@@ -16,7 +16,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-alignment',
 	{
-		title: __( 'CMC - Editable Title and Content Alignment' ),
+		title: __( 'CMC - Editable Content Block with Content Alignment' ),
 		category: 'common',
 		icon: 'editor-alignleft',
 		keywords: [
@@ -48,7 +48,7 @@ export default registerBlockType(
 
 			return (
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block Alignment' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Block with Content Alignment' ) }</h2>
 
 					{
 						!! props.focus && (
@@ -77,7 +77,7 @@ export default registerBlockType(
 		save: props => {
 			return (
 				<div>
-					<h2>{ __( 'CMC Editable Content Block Alignment' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Block with Content Alignment' ) }</h2>
 					<div
 						class="content-block-content"
 						style={ { textAlign: props.attributes.alignment } }

@@ -32,7 +32,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-conditional-fields',
 	{
-		title: __( 'CMC - Editable Title and Content - Conditional Fields' ),
+		title: __( 'CMC - Editable Content with Conditional Fields' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -86,7 +86,7 @@ export default registerBlockType(
 						<Toolbar
 							className="components-toolbar"
 						>
-							<Tooltip text={ __( 'Display A Second Column') }>
+							<Tooltip text={ __( 'Display A Second Column' ) }>
 								<Button
 									className={ classnames(
 										"components-icon-button",
@@ -102,7 +102,7 @@ export default registerBlockType(
 					</BlockControls>
 				),
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block - Conditional Fields' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content with Conditional Fields' ) }</h2>
 
 					<h2>{ __( 'Left Block' ) }</h2>
 					<Editable
@@ -140,7 +140,7 @@ export default registerBlockType(
 						{ 'some-option': props.attributes.someOption },
 					) }
 				>
-					<h2>{ __( 'CMC Editable Content Block - Conditional Fields' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content with Conditional Fields' ) }</h2>
 					<div class="content-block-content content-block-left">
 						{ props.attributes.messageLeft }
 					</div>

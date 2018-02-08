@@ -13,7 +13,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-multiline',
 	{
-		title: __( 'CMC - Editable Title and Content Multiline' ),
+		title: __( 'CMC - Editable Multiline Content Block' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -37,7 +37,7 @@ export default registerBlockType(
 
 			return (
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block Multiline' ) }</h2>
+					<h2>{ __( 'CMC - Editable Multiline Content Block' ) }</h2>
 					<Editable
 						tagName="div"
 						multiline="p"
@@ -54,7 +54,7 @@ export default registerBlockType(
 		save: props => {
 			return (
 				<div>
-					<h2>{ __( 'CMC Editable Content Block Multiline' ) }</h2>
+					<h2>{ __( 'CMC - Editable Multiline Content Block' ) }</h2>
 					<div class="content-block-content">
 						{ props.attributes.message }
 					</div>

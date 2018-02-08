@@ -13,7 +13,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-fifty-fifty',
 	{
-		title: __( 'CMC - Editable Title and Content - Fifty Fifty' ),
+		title: __( 'CMC - Editable Content Fifty Fifty Block' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -47,7 +47,7 @@ export default registerBlockType(
 
 			return (
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block - Fifty Fifty' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Fifty Fifty Block' ) }</h2>
 
 					<h2>{ __( 'Left Block' ) }</h2>
 					<Editable
@@ -74,7 +74,7 @@ export default registerBlockType(
 		save: props => {
 			return (
 				<div>
-					<h2>{ __( 'CMC Editable Content Block - Fifty Fifty' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content Fifty Fifty Block' ) }</h2>
 					<div class="content-block-content content-block-left">
 						{ props.attributes.messageLeft }
 					</div>

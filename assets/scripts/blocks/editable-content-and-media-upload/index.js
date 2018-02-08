@@ -18,7 +18,7 @@ const {
 export default registerBlockType(
 	'cmcgutenberg/editable-content-media',
 	{
-		title: __( 'CMC - Editable Title and Content with Media' ),
+		title: __( 'CMC - Editable Content with Media' ),
 		category: 'common',
 		icon: 'edit',
 		keywords: [
@@ -75,7 +75,7 @@ export default registerBlockType(
 
 			return (
 				<div className={ props.className }>
-					<h2>{ __( 'CMC Editable Content Block with Media' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content with Media' ) }</h2>
 					{ ! props.attributes.imgID ? (
 						<MediaUpload
 							buttonProps={ {
@@ -122,7 +122,7 @@ export default registerBlockType(
 		save: props => {
 			return (
 				<div>
-					<h2>{ __( 'CMC Editable Content Block with Media' ) }</h2>
+					<h2>{ __( 'CMC - Editable Content with Media' ) }</h2>
 					<div class="content-block-image">
 						<img
 							src={ props.attributes.imgURL }
